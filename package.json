@@ -1,26 +1,59 @@
 {
-  "name": "bugsnag-react-native",
-  "homepage": "https://www.bugsnag.com/platforms/react-native-error-reporting/",
-  "repository": "https://github.com/bugsnag/bugsnag-react-native.git",
-  "bugs": "https://github.com/bugsnag/bugsnag-react-native/issues",
-  "version": "2.10.0",
-  "license": "MIT",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "nativePackage": true,
+  "_from": "bugsnag-react-native@^2.10.0",
+  "_id": "bugsnag-react-native@2.10.0",
+  "_inBundle": false,
+  "_integrity": "sha1-QKJ0rBPzbYiLckqg38jcl0+vXio=",
+  "_location": "/bugsnag-react-native",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "bugsnag-react-native@^2.10.0",
+    "name": "bugsnag-react-native",
+    "escapedName": "bugsnag-react-native",
+    "rawSpec": "^2.10.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.10.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://npm.registry.elt:4873/bugsnag-react-native/-/bugsnag-react-native-2.10.0.tgz",
+  "_shasum": "40a274ac13f36d888b724aa0dfc8dc974faf5e2a",
+  "_spec": "bugsnag-react-native@^2.10.0",
+  "_where": "/Users/denis/projects/vrach42-react-native-app",
+  "bugs": {
+    "url": "https://github.com/bugsnag/bugsnag-react-native/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "iserror": "^0.0.2",
     "promise": "^7",
     "prop-types": "^15.6.0"
   },
-  "scripts": {
-    "prepublish": "mkdir -p lib && babel --source-maps --out-dir='lib' --ignore='__tests__' src",
-    "test:unit:js": "jest --coverage src/__tests__",
-    "test:lint:js": "standard",
-    "test:smoke:typescript": "tslint index.d.ts && tsc --strict test/app.ts"
+  "deprecated": false,
+  "description": "[![Documentation](https://img.shields.io/badge/documentation-2.10.0-blue.svg)](http://docs.bugsnag.com/platforms/react-native/)",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^21.0.2",
+    "babel-preset-react-native": "^1.9.1",
+    "jest": "^21.1.0",
+    "standard": "^11.0.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   },
+  "homepage": "https://www.bugsnag.com/platforms/react-native-error-reporting/",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bugsnag-react-native",
+  "nativePackage": true,
   "peerDependencies": {
     "react-native": ">=0.40"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugsnag/bugsnag-react-native.git"
   },
   "rnpm": {
     "ios": {
@@ -34,6 +67,12 @@
       "packageImportPath": "import com.bugsnag.BugsnagReactNative;"
     }
   },
+  "scripts": {
+    "prepublish": "mkdir -p lib && babel --source-maps --out-dir='lib' --ignore='__tests__' src",
+    "test:lint:js": "standard",
+    "test:smoke:typescript": "tslint index.d.ts && tsc --strict test/app.ts",
+    "test:unit:js": "jest --coverage src/__tests__"
+  },
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
@@ -43,14 +82,6 @@
       "examples"
     ]
   },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^21.0.2",
-    "babel-preset-react-native": "^1.9.1",
-    "jest": "^21.1.0",
-    "standard": "^11.0.0",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
-  }
+  "types": "index.d.ts",
+  "version": "2.10.0"
 }
